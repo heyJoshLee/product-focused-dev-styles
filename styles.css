@@ -305,6 +305,30 @@ body {
   background-color: var(--black);
 }
 
+.bg-red {
+  background-color: #e74c3c; /* Red */
+}
+
+.bg-green {
+  background-color: #2ecc71; /* Green */
+}
+
+.bg-blue {
+  background-color: #3498db; /* Blue */
+}
+
+.bg-orange {
+  background-color: #e67e22; /* Orange */
+}
+
+.bg-yellow {
+  background-color: #f1c40f; /* Yellow */
+}
+
+.bg-gray {
+  background-color: #95a5a6; /* Gray */
+}
+
 .text-primary {
   color: var(--primary-color);
 }
