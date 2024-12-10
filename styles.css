@@ -20,6 +20,7 @@ body {
   --text-color: #555; /* General Text */
   --background-light: #f4f4f4; /* Light Gray */
   --white: #f9f9f9; /* White */
+  --white-hover-color: #e0e0e0; /* Light Gray */
   --text-dark: #333; /* Darker text contrast */
   --red: #e74c3c; /* Red */
   --green: #2ecc71; /* Green */
@@ -37,6 +38,7 @@ body {
   --box-shadow-yellow: 0 4px 8px rgba(241, 196, 15, 0.3); /* Yellow */
   --box-shadow-gray: 0 4px 8px rgba(149, 165, 166, 0.3); /* Gray */
   --box-shadow-white: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle, soft shadow */
+  --secondary-hover-color: #bb7ae0; /* Lighter Purple */
 }
 
 /* Header Styles */
@@ -130,7 +132,7 @@ body {
   padding: 0.7rem 1.2rem;
   font-size: 1rem;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.2s ease;
@@ -138,6 +140,38 @@ body {
 
 .button:hover {
   background-color: var(--secondary-color);
+}
+
+.button-secondary {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-hover-color);
+}
+
+/* White Button */
+.button-white {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  background-color: var(--white);
+  color: var(--text-dark);
+  text-decoration: none;
+  border: 1px solid var(--text-dark);
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.button-white:hover {
+  background-color: var(--white-hover-color);
 }
 
 /* Spacing Utilities */
