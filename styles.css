@@ -41,6 +41,19 @@ body {
   --secondary-hover-color: #bb7ae0; /* Lighter Purple */
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+}
+
 /* Header Styles */
 .header {
   background: var(--primary-color);
