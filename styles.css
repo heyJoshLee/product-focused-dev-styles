@@ -987,6 +987,39 @@ ul {
   border-radius: 8px;
 }
 
+/* Flex Gap Utilities */
+.flex-g-1 {
+  gap: 0.25rem; /* 4px */
+}
+
+.flex-g-2 {
+  gap: 0.5rem; /* 8px */
+}
+
+.flex-g-3 {
+  gap: 1rem; /* 16px */
+}
+
+.flex-g-4 {
+  gap: 1.5rem; /* 24px */
+}
+
+.flex-g-5 {
+  gap: 2rem; /* 32px */
+}
+
+.flex-g-6 {
+  gap: 2.5rem; /* 40px */
+}
+
+.flex-g-8 {
+  gap: 3rem; /* 48px */
+}
+
+.flex-g-10 {
+  gap: 4rem; /* 64px */
+}
+
 /* Responsive Styles */
 @media (min-width: 768px) {
   .card {
