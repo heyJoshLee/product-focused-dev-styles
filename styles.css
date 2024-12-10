@@ -76,6 +76,11 @@ ul {
   border-radius: 4px;
 }
 
+.footer a,
+.header a {
+  color: var(--white);
+}
+
 /* Main Container */
 .main-container {
   flex: 1;
