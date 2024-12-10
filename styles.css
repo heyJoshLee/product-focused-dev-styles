@@ -19,6 +19,7 @@ body {
   --background-color: #ffffff; /* Card/Content Background */
   --text-color: #555; /* General Text */
   --background-light: #f4f4f4; /* Light Gray */
+  --white: #f9f9f9; /* White */
   --text-dark: #333; /* Darker text contrast */
   --red: #e74c3c; /* Red */
   --green: #2ecc71; /* Green */
@@ -35,6 +36,7 @@ body {
   --box-shadow-orange: 0 4px 8px rgba(230, 126, 34, 0.3); /* Orange */
   --box-shadow-yellow: 0 4px 8px rgba(241, 196, 15, 0.3); /* Yellow */
   --box-shadow-gray: 0 4px 8px rgba(149, 165, 166, 0.3); /* Gray */
+  --box-shadow-white: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle, soft shadow */
 }
 
 /* Header Styles */
@@ -297,6 +299,10 @@ body {
   background-color: var(--secondary-color);
 }
 
+.bg-white {
+  background-color: var(--white);
+}
+
 .bg-light {
   background-color: var(--background-light);
 }
@@ -339,6 +345,94 @@ body {
 
 .text-black {
   color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-no-underline {
+  text-decoration: none;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-normal-style {
+  font-style: normal;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.leading-normal {
+  line-height: 1.6;
+}
+
+.leading-tight {
+  line-height: 1.2;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+.tracking-normal {
+  letter-spacing: normal;
+}
+
+.tracking-wide {
+  letter-spacing: 0.05em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.02em;
 }
 
 /* Width & Height Utilities */
@@ -410,6 +504,10 @@ body {
 
 .box-shadow-lg {
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-white {
+  box-shadow: 0 4px 8px var(--box-shadow-white);
 }
 
 .box-shadow-primary {
@@ -561,7 +659,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--white);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
