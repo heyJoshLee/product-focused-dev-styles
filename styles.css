@@ -26,6 +26,7 @@ body {
   --orange: #e67e22; /* Orange */
   --yellow: #f1c40f; /* Yellow */
   --gray: #95a5a6; /* Gray */
+  --black: #2c2c2c; /* Soft Black */
   --box-shadow-primary: 0 4px 8px rgba(106, 0, 173, 0.3); /* Purple */
   --box-shadow-secondary: 0 4px 8px rgba(155, 89, 182, 0.3); /* Lighter Purple */
   --box-shadow-red: 0 4px 8px rgba(231, 76, 60, 0.3); /* Red */
@@ -308,6 +309,10 @@ body {
   color: var(--secondary-color);
 }
 
+.text-black {
+  color: var(--black);
+}
+
 /* Width & Height Utilities */
 .w-full {
   width: 100%;
@@ -356,6 +361,10 @@ body {
 
 .border-gray {
   border: 2px solid var(--gray);
+}
+
+.border-black {
+  border: 2px solid var(--black);
 }
 
 .border-rounded {
