@@ -1212,7 +1212,7 @@ ul {
   gap: 1rem;
 }
 
-.form-container .form-buttons .action-button {
+.form-container .form-buttons .button {
   padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 5px;
@@ -1222,21 +1222,21 @@ ul {
   flex-grow: 1;
 }
 
-.form-container .form-buttons .action-button.full-width {
+.form-container .form-buttons .button.full-width {
   width: 100%;
 }
 
-.form-container .form-buttons .action-button.half-width {
+.form-container .form-buttons .button.half-width {
   width: 48%;
 }
 
 /* Responsive Buttons */
 @media (min-width: 768px) {
-  .form-container .form-buttons .action-button.full-width {
+  .form-container .form-buttons .button.full-width {
     width: 100%;
   }
 
-  .form-container .form-buttons .action-button.half-width {
+  .form-container .form-buttons .button.half-width {
     width: 48%;
   }
 }
