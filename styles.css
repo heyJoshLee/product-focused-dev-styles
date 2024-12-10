@@ -115,44 +115,89 @@ body {
 }
 
 /* Spacing Utilities */
-.m-t {
-  margin-top: 1rem;
+
+/* Margin - Vertical */
+.mv-1 {
+  margin: 0.25rem 0;
 }
 
-.m-b {
-  margin-bottom: 1rem;
+.mv-2 {
+  margin: 0.5rem 0;
 }
 
-.m-v {
+.mv-3 {
   margin: 1rem 0;
 }
 
-.m-l {
-  margin-left: 1rem;
+.mv-4 {
+  margin: 1.5rem 0;
 }
 
-.m-r {
-  margin-right: 1rem;
+.mv-5 {
+  margin: 2rem 0;
 }
 
-.m-auto {
-  margin: auto;
+/* Margin - Horizontal */
+.mh-1 {
+  margin: 0.25rem 0;
 }
 
-.p-t {
-  padding-top: 1rem;
+.mh-2 {
+  margin: 0.5rem 0;
 }
 
-.p-b {
-  padding-bottom: 1rem;
+.mh-3 {
+  margin: 1rem 0;
 }
 
-.p-l {
-  padding-left: 1rem;
+.mh-4 {
+  margin: 1.5rem 0;
 }
 
-.p-r {
-  padding-right: 1rem;
+.mh-5 {
+  margin: 2rem 0;
+}
+
+/* Padding - Vertical */
+.pv-1 {
+  padding: 0.25rem 0;
+}
+
+.pv-2 {
+  padding: 0.5rem 0;
+}
+
+.pv-3 {
+  padding: 1rem 0;
+}
+
+.pv-4 {
+  padding: 1.5rem 0;
+}
+
+.pv-5 {
+  padding: 2rem 0;
+}
+
+/* Padding - Horizontal */
+.ph-1 {
+  padding: 0.25rem 0;
+}
+
+.ph-2 {
+  padding: 0.5rem 0;
+}
+
+.ph-3 {
+  padding: 1rem 0;
+}
+
+.ph-4 {
+  padding: 1.5rem 0;
+}
+
+.ph-5 {
+  padding: 2rem 0;
 }
 
 /* Text Size Utilities */
