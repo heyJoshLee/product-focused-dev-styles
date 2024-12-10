@@ -301,6 +301,10 @@ body {
   background-color: var(--background-light);
 }
 
+.bg-black {
+  background-color: var(--black);
+}
+
 .text-primary {
   color: var(--primary-color);
 }
