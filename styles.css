@@ -1163,3 +1163,80 @@ ul {
     padding: 2rem 3rem;
   }
 }
+
+/* General Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between elements vertically */
+  padding: 1.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  background-color: var(--background-light);
+}
+
+/* Space Adjustment */
+.form-container.space-between-labels .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between label and input */
+}
+
+.form-container.side-by-side-labels .form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between the label and the input */
+}
+
+/* General Styling for Inputs */
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'] {
+  padding: 0.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  flex: 1;
+  max-width: 100%;
+}
+
+/* Style for Labels */
+.form-group label {
+  font-size: 1rem;
+  color: var(--text-dark);
+  flex-shrink: 0;
+}
+
+/* Style Buttons */
+.form-container .form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-container .form-buttons .action-button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  transition: background-color 0.2s ease;
+  flex-grow: 1;
+}
+
+.form-container .form-buttons .action-button.full-width {
+  width: 100%;
+}
+
+.form-container .form-buttons .action-button.half-width {
+  width: 48%;
+}
+
+/* Responsive Buttons */
+@media (min-width: 768px) {
+  .form-container .form-buttons .action-button.full-width {
+    width: 100%;
+  }
+
+  .form-container .form-buttons .action-button.half-width {
+    width: 48%;
+  }
+}
