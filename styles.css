@@ -15,9 +15,25 @@ body {
 /* Primary Colors */
 :root {
   --primary-color: #6a0dad; /* Dark Purple */
-  --secondary-color: #9b59b6; /* Lighter Purple for hover effects */
-  --background-color: #ffffff; /* Light card background */
-  --text-color: #555; /* Neutral dark gray */
+  --secondary-color: #9b59b6; /* Lighter Purple */
+  --background-color: #ffffff; /* Card/Content Background */
+  --text-color: #555; /* General Text */
+  --background-light: #f4f4f4; /* Light Gray */
+  --text-dark: #333; /* Darker text contrast */
+  --red: #e74c3c; /* Red */
+  --green: #2ecc71; /* Green */
+  --blue: #3498db; /* Blue */
+  --orange: #e67e22; /* Orange */
+  --yellow: #f1c40f; /* Yellow */
+  --gray: #95a5a6; /* Gray */
+  --box-shadow-primary: 0 4px 8px rgba(106, 0, 173, 0.3); /* Purple */
+  --box-shadow-secondary: 0 4px 8px rgba(155, 89, 182, 0.3); /* Lighter Purple */
+  --box-shadow-red: 0 4px 8px rgba(231, 76, 60, 0.3); /* Red */
+  --box-shadow-green: 0 4px 8px rgba(46, 204, 113, 0.3); /* Green */
+  --box-shadow-blue: 0 4px 8px rgba(52, 152, 219, 0.3); /* Blue */
+  --box-shadow-orange: 0 4px 8px rgba(230, 126, 34, 0.3); /* Orange */
+  --box-shadow-yellow: 0 4px 8px rgba(241, 196, 15, 0.3); /* Yellow */
+  --box-shadow-gray: 0 4px 8px rgba(149, 165, 166, 0.3); /* Gray */
 }
 
 /* Header Styles */
@@ -273,23 +289,23 @@ body {
 
 /* Colors */
 .bg-primary {
-  background-color: #6a0dad;
+  background-color: var(--primary-color);
 }
 
 .bg-secondary {
-  background-color: #9b59b6;
+  background-color: var(--secondary-color);
 }
 
 .bg-light {
-  background-color: #f4f4f4;
+  background-color: var(--background-light);
 }
 
 .text-primary {
-  color: #6a0dad;
+  color: var(--primary-color);
 }
 
 .text-secondary {
-  color: #9b59b6;
+  color: var(--secondary-color);
 }
 
 /* Width & Height Utilities */
@@ -311,39 +327,38 @@ body {
 
 /* Border Classes */
 .border-primary {
-  border: 2px solid #6a0dad;
+  border: 2px solid var(--primary-color);
 }
 
 .border-secondary {
-  border: 2px solid #9b59b6;
+  border: 2px solid var(--secondary-color);
 }
 
 .border-red {
-  border: 2px solid #e74c3c;
+  border: 2px solid var(--red);
 }
 
 .border-green {
-  border: 2px solid #2ecc71;
+  border: 2px solid var(--green);
 }
 
 .border-blue {
-  border: 2px solid #3498db;
+  border: 2px solid var(--blue);
 }
 
 .border-orange {
-  border: 2px solid #e67e22;
+  border: 2px solid var(--orange);
 }
 
 .border-yellow {
-  border: 2px solid #f1c40f;
+  border: 2px solid var(--yellow);
 }
 
 .border-gray {
-  border: 2px solid #95a5a6;
+  border: 2px solid var(--gray);
 }
 
 .border-rounded {
-  border: 2px solid #6a0dad;
   border-radius: 8px;
 }
 
@@ -361,27 +376,27 @@ body {
 }
 
 .box-shadow-primary {
-  box-shadow: 0 4px 8px rgba(106, 0, 173, 0.4);
+  box-shadow: 0 4px 8px var(--box-shadow-primary);
 }
 
 .box-shadow-secondary {
-  box-shadow: 0 4px 8px rgba(155, 89, 182, 0.4);
+  box-shadow: 0 4px 8px var(--box-shadow-secondary);
 }
 
 .box-shadow-red {
-  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.4);
+  box-shadow: 0 4px 8px var(--box-shadow-red);
 }
 
 .box-shadow-green {
-  box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+  box-shadow: 0 4px 8px var(--box-shadow-green);
 }
 
 .box-shadow-blue {
-  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+  box-shadow: 0 4px 8px var(--box-shadow-blue);
 }
 
 .box-shadow-orange {
-  box-shadow: 0 4px 8px rgba(230, 126, 34, 0.4);
+  box-shadow: 0 4px 8px var(--box-shadow-orange);
 }
 
 /* Responsive & Container-Filling Image Helpers */
