@@ -106,7 +106,7 @@ ul {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
+.hover-float:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -170,6 +170,10 @@ ul {
 
 .button:hover {
   background-color: var(--secondary-color);
+}
+
+.button:hover, .button-secondary:hover {
+  cursor: pointer;
 }
 
 .button-secondary {
@@ -1165,7 +1169,7 @@ ul {
 }
 
 /* General Form Styling */
-.form-container {
+.form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem; /* Space between elements vertically */
@@ -1176,13 +1180,13 @@ ul {
 }
 
 /* Space Adjustment */
-.form-container.space-between-labels .form-group {
+.form.space-between-labels .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem; /* Space between label and input */
 }
 
-.form-container.side-by-side-labels .form-group {
+.form.side-by-side-labels .form-group {
   display: flex;
   align-items: center;
   gap: 1rem; /* Space between the label and the input */
@@ -1207,12 +1211,12 @@ ul {
 }
 
 /* Style Buttons */
-.form-container .form-buttons {
+.form .form-buttons {
   display: flex;
   gap: 1rem;
 }
 
-.form-container .form-buttons .button {
+.form .form-buttons .button {
   padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 5px;
@@ -1222,21 +1226,28 @@ ul {
   flex-grow: 1;
 }
 
-.form-container .form-buttons .button.full-width {
+.form .form-buttons .button.full-width {
   width: 100%;
 }
 
-.form-container .form-buttons .button.half-width {
+.form .form-buttons .button.half-width {
   width: 48%;
 }
 
 /* Responsive Buttons */
 @media (min-width: 768px) {
-  .form-container .form-buttons .button.full-width {
+  .form .form-buttons .button.full-width {
     width: 100%;
   }
 
-  .form-container .form-buttons .button.half-width {
+  .form .form-buttons .button.half-width {
     width: 48%;
   }
 }
+
+
+
+TODO
+
+Hover and focused styles aren't working on button elements only on div
+
