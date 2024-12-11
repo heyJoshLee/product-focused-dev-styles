@@ -172,7 +172,8 @@ ul {
   background-color: var(--secondary-color);
 }
 
-.button:hover, .button-secondary:hover {
+.button:hover,
+.button-secondary:hover {
   cursor: pointer;
 }
 
@@ -1180,22 +1181,22 @@ ul {
 }
 
 /* Space Adjustment */
-.form.space-between-labels .form-group {
+.form.stacked .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem; /* Space between label and input */
 }
 
-.form.side-by-side-labels .form-group {
+.form.side-by-side .form-group {
   display: flex;
-  align-items: center;
   gap: 1rem; /* Space between the label and the input */
 }
 
 /* General Styling for Inputs */
 .form-group input[type='text'],
 .form-group input[type='email'],
-.form-group input[type='password'] {
+.form-group input[type='password'],
+.form-group textarea {
   padding: 0.5rem;
   border: 1px solid var(--gray);
   border-radius: 4px;
@@ -1244,10 +1245,3 @@ ul {
     width: 48%;
   }
 }
-
-
-
-TODO
-
-Hover and focused styles aren't working on button elements only on div
-
